@@ -1,0 +1,92 @@
+{
+  "sound": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Firework Sounds"
+  },
+  "audioReact": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Audio Visualiser"
+  },
+  "autoLaunch": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Auto Fire",
+    "help":"Launches sequences of fireworks automatically. Sit back and enjoy the show, or disable to have full control."
+  },
+  "autoLaunchFreq": {
+    "max": 30,
+    "min": -30,
+    "step": 5,
+    "text": "Autofire frequency",
+    "type": "slider",
+    "value": 0
+  },
+  "quality": {
+    "type": "dropdown",
+    "value": 2,
+    "text": "Quality",
+    "help":"Overall graphics quality. If the animation is not running smoothly, try lowering the quality. High quality greatly increases the amount of sparks rendered and may cause lag.",
+    "items": [
+      "Low",
+      "Medium",
+      "High",
+    ]
+  },
+  "shellSize": {
+    "max": 16,
+    "min": 2,
+    "step": 1,
+    "text": "Shell Power",
+		"help": "The size of the fireworks. Modeled after real firework shell sizes, larger shells have bigger bursts with more stars, and sometimes more complex effects. However, larger shells also require more processing power and may cause lag.",
+    "type": "slider",
+    "value": 3
+  },
+  "scaleFactor":{
+    "max": 20,
+    "min": 5,
+    "step": 1,
+    "text": "Shell Size",
+		"help": "Allows scaling the size of all fireworks, essentially moving you closer or farther away. For larger shell sizes, it can be convenient to decrease the scale a bit, especially on phones or tablets.",
+    "type": "slider",
+    "value": 10
+  },
+  "speed": {
+    "max": 30,
+    "min": -30,
+    "step": 2,
+    "text": "Speed",
+    "type": "slider",
+    "value": 0
+  },
+  "longExposure": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Open Shutter",
+    "help":"Experimental effect that preserves long streaks of light, similar to leaving a camera shutter open."
+  },
+  "skyLighting": {
+    "type": "dropdown",
+    "value": 2,
+    "text": "Sky Glow",
+    "help":"Illuminates the background as fireworks explode. If the background looks too bright on your screen, try setting it to Dim or None.",
+    "items": [
+      "None",
+      "Dim",
+      "Normal",
+    ]
+  },
+  "bgImgChk": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Background Image Enabled"
+  },
+  "imgSelect": {
+    "type": "folderDropdown",
+    "value": "",
+    "text": "Image Select",
+    "filter": "*.jpg|*.png|*.jpeg",
+    "folder": "wallpapers"
+  },
+}
